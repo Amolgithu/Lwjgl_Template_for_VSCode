@@ -1,0 +1,1 @@
+javac -cp "libs/*" -d bin src/Main.java && java -Djava.library.path="native" -cp "bin;libs/*" Main
