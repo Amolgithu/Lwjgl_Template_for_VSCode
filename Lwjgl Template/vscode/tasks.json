@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile LWJGL Project",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "for /R src %f in (*.java) do @echo %f > sources.txt && javac -cp libs/* -d bin @sources.txt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$javac"]
+        }
+    ]
+}

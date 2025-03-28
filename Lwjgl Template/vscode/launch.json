@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "request": "launch",
+            "name": "Debug LWJGL",
+            "preLaunchTask": "Compile LWJGL Project",
+            "mainClass": "Main",
+            "vmArgs": "-Djava.library.path=${workspaceFolder}/native",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/libs/*"
+            ]
+        }
+    ]
+}
